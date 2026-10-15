@@ -6,7 +6,8 @@ public class Experiment2 {
             try {
                 int[] numbers = {10, 20, 30};
                 System.out.println(numbers[5]);
-            } catch (ArrayIndexOutOfBoundsException e) {
+            } 
+            catch (ArrayIndexOutOfBoundsException e) {
                 System.out.println("Inner catch: " + e.getMessage());
             }
 

@@ -38,10 +38,10 @@ class Account {
         balance += amount;
     }
 
-    public void withdraw(double amount)
-            throws InvalidAmountException, InsufficientBalanceException {
-        validateAmount(amount);
+    public void withdraw(double amount) throws InvalidAmountException, 
+        InsufficientBalanceException {
 
+        validateAmount(amount);
         if (amount > balance) {
             throw new InsufficientBalanceException("Insufficient balance");
         }

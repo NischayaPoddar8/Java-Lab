@@ -72,11 +72,14 @@ public class Experiment6 {
                 try {
                     system.login(username, password);
                     break;
-                } catch (InvalidUsernameException e) {
+                } 
+                catch (InvalidUsernameException e) {
                     System.out.println("Invalid username");
-                } catch (InvalidPasswordException e) {
+                } 
+                catch (InvalidPasswordException e) {
                     System.out.println("Invalid password");
-                } catch (AccountLockedException e) {
+                } 
+                catch (AccountLockedException e) {
                     System.out.println("Account locked");
                     break;
                 }
